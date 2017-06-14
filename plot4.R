@@ -17,8 +17,8 @@ power$date_time <- strptime(power$date_time, format = "%d/%m/%Y %H:%M:%S", tz = 
 
 ## PLOTTING
 # set up the frame
-par(mfrow= c(2,2), mar = c(3.7, 3.5, 2 ,1) + 0.1, oma = c(2,1,0,0) + 0.1)
-par(cex.lab=.75)
+par(mfrow= c(2,2), mar = c(3.7, 3.6, 2 ,1) + 0.1, oma = c(2,1,0,0) + 0.1)
+par(cex.lab=.85)
 
 # make the 4 plots
 plot(power$date_time, power$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power", cex.axis = .65)
