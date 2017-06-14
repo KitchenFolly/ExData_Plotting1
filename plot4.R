@@ -21,17 +21,17 @@ par(mfrow= c(2,2), mar = c(3.7, 3.6, 2 ,1) + 0.1, oma = c(2,1,0,0) + 0.1)
 par(cex.lab=.9)
 
 # make the 4 plots
-plot(power$date_time, power$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power", cex.axis = .65)
+plot(power$date_time, power$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power", cex.axis = .85)
 
-plot(power$date_time, power$Voltage, type = "l", xlab = "datetime", ylab = "Voltage", cex.axis = .65)
+plot(power$date_time, power$Voltage, type = "l", xlab = "datetime", ylab = "Voltage", cex.axis = .85)
 
-plot(power$date_time, power$Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering", cex = .75, cex.axis = .65)
+plot(power$date_time, power$Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering", cex = .75, cex.axis = .85)
 lines(power$date_time, power$Sub_metering_1, col = "black")
 lines(power$date_time, power$Sub_metering_2, col = "red")
 lines(power$date_time, power$Sub_metering_3, col = "blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = .5, lty=c(1,1),  lwd = 2, col = c("black", "red", "blue"))
 
-plot(power$date_time, power$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power",  cex.axis = .65)
+plot(power$date_time, power$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power",  cex.axis = .85)
 
 
 ## PRINT
